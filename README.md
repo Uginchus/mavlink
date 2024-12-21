@@ -1,3 +1,39 @@
+# Pragma info
+
+Install requirements
+```
+python3 -m pip install pyyaml pymavlink mavsdk aioconsole
+python3 -m pip install -r pymavlink/requirements.txt
+```
+
+## Generate mavlink library
+
+Launch mavlink generator GUI
+```
+python3 -m mavgenerate
+```
+
+OR
+
+Generate it via command line
+```
+python3 -m pymavlink.tools.mavgen --lang=C --wire-protocol=2.0 --output=generated/include/mavlink/v2.0 message_definitions/v1.0/all.xml
+```
+
+## Generate ROS communication
+
+```
+sudo apt-get install ros-jazzy-mavlink
+```
+
+## MAVSDK 
+
+### Python usage
+
+```
+apython
+```
+
 [![Build Status](https://github.com/mavlink/mavlink/workflows/Test%20and%20deploy/badge.svg)](https://github.com/mavlink/mavlink/actions?query=branch%3Amaster)
 
 # MAVLink

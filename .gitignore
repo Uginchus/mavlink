@@ -21,3 +21,7 @@ include/
 include/mavlink/v1.0
 .idea
 /.vscode
+venv
+generated
+log
+install
